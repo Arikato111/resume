@@ -9,8 +9,10 @@ import info from "../data/info.json";
       info.competitions.map((comp) => (
         <div class="flex justify-between">
           <div>
-            <span class="font-bold">{comp.name}</span>,
-            <span> {comp.level}</span>,<span>{comp.year}</span>
+            <div class="font-bold">{comp.name}</div>
+            <div class="mx-10">
+              - {comp.level}, {comp.year}
+            </div>
           </div>
           <div>
             <a class="text-right" href={`https://${comp.certificates}`}>
