@@ -1,0 +1,17 @@
+---
+import info from "../data/info.json";
+---
+
+<div class="my-2">
+  <h3 class="font-bold text-xl">Education</h3>
+  <div>
+    {
+      info.Education.map((edu) => (
+        <div>
+          <span class="font-bold">{edu.level}</span>,<span> {edu.school}</span>,
+          <span>{edu.years}</span>
+        </div>
+      ))
+    }
+  </div>
+</div>

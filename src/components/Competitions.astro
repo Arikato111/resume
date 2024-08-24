@@ -1,0 +1,24 @@
+---
+import info from "../data/info.json";
+---
+
+<div class="my-2">
+  <h3 class="font-bold text-xl">Competitions</h3>
+  <div>
+    {
+      info.competitions.map((comp) => (
+        <div class="flex justify-between">
+          <div>
+            <span class="font-bold">{comp.name}</span>,
+            <span> {comp.level}</span>,<span>{comp.year}</span>
+          </div>
+          <div>
+            <a class="text-right" href={`https://${comp.certificates}`}>
+              {comp.certificates}
+            </a>
+          </div>
+        </div>
+      ))
+    }
+  </div>
+</div>

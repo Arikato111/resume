@@ -1,0 +1,22 @@
+---
+import info from "../data/info.json";
+---
+
+<div class="my-2">
+  <h3 class="font-bold text-xl">Skills</h3>
+  <div>
+    {
+      Object.keys(info.skills).map((k) => (
+        <div>
+          <span class="font-bold">{k}</span>:
+          <span>
+            {
+              //@ts-ignore;
+              info.skills[k]
+            }
+          </span>
+        </div>
+      ))
+    }
+  </div>
+</div>

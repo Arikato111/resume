@@ -1,0 +1,59 @@
+---
+import info from "../data/info.json";
+---
+
+<div class="text-right">
+  <div>
+    <span>Email:</span>
+    <a class="underline" href={`mailto:${info.personal.email}`}
+      >{info.personal.email}</a
+    >
+  </div>
+  <div>
+    <span>Linkedin:</span>
+    <span
+      ><a
+        class="underline"
+        href={`https://www.linkedin.com/in/${info.personal.linkedin}/`}
+        >{info.personal.linkedin}</a
+      ></span
+    >
+  </div>
+  <div>
+    <span>Github:</span>
+    <span>
+      <a class="underline" href={`https://github.com/${info.personal.github}`}
+        >{info.personal.github}</a
+      >
+    </span>
+  </div>
+  <div>
+    <span>Website:</span>
+    <span>
+      <a href={`https://${info.personal.website}`} class="underline"
+        >{info.personal.website}</a
+      >
+    </span>
+  </div>
+  <div class="hidden" id="phone-block">
+    <span>Phone:</span>
+    <span id="phone-value"></span>
+  </div>
+</div>
+
+<script is:inline>
+  function setPhone(phone) {
+    const phone_div = document.getElementById("phone-block");
+    const phone_value = document.getElementById("phone-value");
+
+    phone_div.classList.remove("hidden");
+    phone_value.innerText = phone;
+  }
+  const urlSearchParams = new URLSearchParams(window.location.search);
+  const params = Object.fromEntries(urlSearchParams.entries());
+  console.log("params", params);
+  if (params.phone) {
+    console.log(params.phone);
+    setPhone(params.phone);
+  }
+</script>

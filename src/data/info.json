@@ -1,0 +1,68 @@
+{
+    "personal": {
+        "name": "Nawasan Wisitsingkhon",
+        "description": "I am as Developer, Full stack web development with most Typescript, and Command line program with Rust, I am familiar with Debian based Linux distro and Gnome desktop. I interested in Open source . And I'm still interested in networks, especially SDN.",
+        "github": "Arikato111",
+        "email": "contact@nawasan.dev",
+        "linkedin": "nawasan",
+        "website": "nawasan.dev"
+    },
+    "skills": {
+        "Computer Language": "Typescript, Rust, Python, PHP, C/C++",
+        "Frameworks": "NextJS, React, Svelte, Astro, Tailwindcss, ExpressJS",
+        "Tools": "Linux, Docker, Git, Firebase, Vscode, Vim",
+        "Network": "Openflow, Software-defined network"
+    },
+    "projects": [
+        {
+            "name": "Tenjin",
+            "description": "The software defined network framework and Openflow protocol",
+            "tech": "Rust, Cli, crates.io",
+            "link": "github.com/Arikato111/Tenjin"
+        },
+        {
+            "name": "Tenjin-py",
+            "description": "Improved that Tenjin can be used with Python.",
+            "tech": "Rust, Python, maturin, Pyo3, PyPi",
+            "link": "github.com/Arikato111/Tenjin-py"
+        },
+        {
+            "name": "Social web",
+            "description": "social website that you can post something, similar to a web board.",
+            "tech": "PHP, MySQL, Tailwindcss",
+            "link": "github.com/Arikato111/social-web-php"
+        },
+        {
+            "name": "Online shop",
+            "description": "The mini project from web programming class",
+            "tech": "Javascript, Nextjs, Express, Prisma, Mongodb, jsonwebtoken",
+            "link": "github.com/nawasan111/final-exam"
+        },
+        {
+            "name": "what to read",
+            "description": "the website that can recommends random books to read, and lists books.",
+            "tech": "Typescript, React, Tailwindcss",
+            "link": "github.com/Arikato111/what-to-read"
+        }
+    ],
+    "competitions": [
+        {
+            "name": "Digital Business Innovation Development",
+            "level": "Ranked 4th in the regional level",
+            "year": "2022",
+            "certificates": "nawasan.dev/certificates/5"
+        }
+    ],
+    "Education": [
+        {
+            "level": "B.Sc. Information and Communication Technology",
+            "school": "Ubon Ratchathani University",
+            "years": "2023 - present"
+        },
+        {
+            "level": "Higher Vocational Certificate, Business Computer",
+            "school": "Warinchamrap Vocational College",
+            "years": "2022 - 2023"
+        }
+    ]
+}

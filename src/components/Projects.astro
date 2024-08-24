@@ -1,0 +1,29 @@
+---
+import info from "../data/info.json";
+---
+
+<div class="my-2">
+  <h3 class="font-bold text-xl">Projects</h3>
+  <div>
+    {
+      info.projects.map((proj) => (
+        <div>
+          <div class="flex justify-between">
+            <span class="font-bold mr-10">{proj.name}</span>
+            <span>
+              <a
+                target="_blank"
+                class="underline"
+                href={`https://${proj.link}`}
+              >
+                {proj.link}
+              </a>
+            </span>
+          </div>
+          <div class="mx-10"> - {proj.description}</div>
+          <div class="mx-10"> - {proj.tech}</div>
+        </div>
+      ))
+    }
+  </div>
+</div>
