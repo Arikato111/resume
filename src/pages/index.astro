@@ -6,9 +6,12 @@ import Education from "../components/Education.astro";
 import info from "../data/info.json";
 import Contacts from "../components/Contacts.astro";
 import Competitions from "../components/Competitions.astro";
+import BlackLine from "../components/BlackLine.astro";
+import Header from "../components/Header.astro";
 ---
 
-<Layout title="resume | Arikato111">
+<Layout title={info.common.title}>
+  <Header />
   <main>
     <div class="flex justify-between">
       <div class="flex items-center">
@@ -18,25 +21,16 @@ import Competitions from "../components/Competitions.astro";
       </div>
       <Contacts />
     </div>
-
     <div class="max-w-4xl my-3">
       {info.personal.description}
     </div>
-    <div class="hr"></div>
+    <BlackLine />
     <Skills />
-    <div class="hr"></div>
+    <BlackLine />
     <Projects />
-    <div class="hr"></div>
+    <BlackLine />
     <Competitions />
-    <div class="hr"></div>
+    <BlackLine />
     <Education />
   </main>
 </Layout>
-
-<style>
-  .hr {
-    height: 2px;
-    /* background-color: black; */
-    border-top: solid 1px #000 !important;
-  }
-</style>
