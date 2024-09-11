@@ -51,9 +51,11 @@ import info from "../data/info.json";
   }
   const urlSearchParams = new URLSearchParams(window.location.search);
   const params = Object.fromEntries(urlSearchParams.entries());
-  console.log("params", params);
   if (params.phone) {
     console.log(params.phone);
     setPhone(params.phone);
+  }
+  if (params.print != undefined) {
+    window.print();
   }
 </script>
