@@ -1,71 +1,125 @@
 {
     "common": {
-        "title": "resume | Arikato111",
+        "title": {
+            "en": "resume | Arikato111",
+            "th": "เรซูเม่ | Arikato111"
+        },
         "source": "github.com/Arikato111/resume"
     },
     "personal": {
-        "name": "Nawasan Wisitsingkhon",
-        "description": "I am as Developer, Full stack web development with most Typescript, and Command line program with Rust, I am familiar with Debian based Linux distro and Gnome desktop. I interested in Open source. And I'm also interested in networks, especially SDN.",
+        "name": {
+            "en": "Nawasan Wisitsingkhon",
+            "th": "ณวสันต์ วิศิษฏ์ศิงขร"
+        },
+        "description": {
+            "en": "A software developer who is interested in developing web applications, mainly using Typescript. Familiar with React, Nextjs, and Expressjs. Also interested in using Rust and Go for back-end and command line programming with Rust. Also very familiar with using Linux for both Server and Desktop.",
+            "th": "นักพัฒนาซอร์ฟแวร์ผู้มีความสนใจในด้านการพัฒนาเว็บแอปพลิเคชั่น โดยใช้ Typescript เป็นหลัก มีความคุ้นเคยกับ React  Nextjs และ expressjs และยังมีความสนใจในการใช้ Rust และ Go ในการทำ back-end และการเขียนโปรแกรมบรรทัดคำสั่งด้วย Rust นอกจากนั้นยังมีความคุ้นเคยกับการใช้งาน Linux ทั้งส่วน Server และ Desktop เป็นอย่างดี"
+        },
         "github": "Arikato111",
         "email": "contact@nawasan.dev",
         "linkedin": "nawasan",
         "website": "nawasan.dev"
     },
     "skills": {
-        "Computer Language": "Typescript, Rust, Python, PHP, C/C++",
-        "Frameworks": "NextJS, React, Svelte, Astro, Tailwindcss, ExpressJS",
-        "Tools": "Linux, Docker, Git, Firebase, Vscode, Vim",
-        "Network": "Openflow, Software-defined network"
+        "en": {
+            "Computer Language": "Typescript, Rust, Python, PHP, C/C++",
+            "Frameworks": "NextJS, React, Svelte, Astro, Tailwindcss, ExpressJS",
+            "Tools": "Linux, Docker, Git, Firebase, Vscode, Vim",
+            "Network": "Openflow, Software-defined network"
+        },
+        "th": {
+            "ภาษาโปรแกรม": "Typescript, Rust, Python, PHP, C/C++",
+            "เฟรมเวิร์ก": "NextJS, React, Svelte, Astro, Tailwindcss, ExpressJS",
+            "เครื่องมือ": "Linux, Docker, Git, Firebase, Vscode, Vim",
+            "เน็ตเวิร์ก": "Openflow, Software-defined network"
+        }
     },
     "projects": [
         {
             "name": "Tenjin",
-            "description": "The software defined network framework and Openflow protocol",
-            "tech": "Rust, Cli, crates.io",
+            "description": {
+                "en": "The software defined network framework and Openflow protocol",
+                "th": "เฟรมเวิร์ก Software defined network และโปรโตคอล Openflow"
+            },
+            "tech": "Rust, Networks, command line, CI/CD, crates.io",
             "link": "github.com/Arikato111/Tenjin"
         },
         {
             "name": "Tenjin-py",
-            "description": "Improved that Tenjin can be used with Python.",
+            "description": {
+                "en": "Improved that Tenjin can be used with Python.",
+                "th": "ปรับปรุงให้ Tenjin สามารถใช้งานใน Python ได้"
+            },
             "tech": "Rust, Python, maturin, Pyo3, PyPi",
             "link": "github.com/Arikato111/Tenjin-py"
         },
         {
             "name": "Social web",
-            "description": "social website that you can post something, similar to a web board.",
-            "tech": "PHP, MySQL, Tailwindcss",
+            "description": {
+                "en": "social website that you can post something, similar to a web board.",
+                "th": "เว็บไซต์โซเชียลที่สามารถโพสต์อะไรก็ได้ คล้ายกับเว็บบอร์ด"
+            },
+            "tech": "PHP, MySQL, Tailwindcss, Docker",
             "link": "github.com/Arikato111/social-web-php"
         },
         {
             "name": "Online shop",
-            "description": "The mini project from web programming class",
+            "description": {
+                "en": "The mini project from web programming class",
+                "th": "โปรเจกต์เล็ก ๆ จากห้องเรียนการเขียนโปรแกรมบนเว็บ"
+            },
             "tech": "Javascript, Nextjs, Express, Prisma, Mongodb, jsonwebtoken",
             "link": "github.com/nawasan111/final-exam"
         },
         {
             "name": "what to read",
-            "description": "the website that can recommends random books to read, and lists books.",
+            "description": {
+                "en": "the website that can recommends random books to read, and show book list.",
+                "th": "เว็บไซต์ที่สามารถแนะนำหนังสือให้อ่านแบบสุ่ม และแสดงรายการหนังสือ"
+            },
             "tech": "Typescript, React, Tailwindcss",
             "link": "github.com/Arikato111/what-to-read"
         }
     ],
-    "competitions": [
-        {
-            "name": "Digital Business Innovation Development",
-            "level": "Ranked 4th in the regional level",
-            "year": "2022",
-            "certificates": "nawasan.dev/certificates/5"
-        }
-    ],
+    "competitions": {
+        "en": [
+            {
+                "name": "Digital Business Innovation Development",
+                "level": "Ranked 4th in the regional level",
+                "year": "2022",
+                "certificates": "nawasan.dev/certificates/5"
+            }
+        ],
+        "th": [
+            {
+                "name": "ทักษะการพัฒนานวัตกรรมธุรกิจดิจิทัล",
+                "level": "อันดับที่ 4 ในระดับภูมิภาค",
+                "year": "2022",
+                "certificates": "nawasan.dev/certificates/5"
+            }
+        ]
+    },
     "Education": [
         {
-            "level": "B.Sc. Information and Communication Technology",
-            "school": "Ubon Ratchathani University",
+            "level": {
+                "en": "B.Sc. Information and Communication Technology",
+                "th": "วท.บ. เทคโนโลยีสารสนเทศและการสื่อสาร"
+            },
+            "school": {
+                "en": "Ubon Ratchathani University",
+                "th": "มหาวิทยาลัยอุบลราชธานี"
+            },
             "years": "2023 - present"
         },
         {
-            "level": "Higher Vocational Certificate, Business Computer",
-            "school": "Warinchamrap Vocational College",
+            "level": {
+                "en": "Higher Vocational Certificate, Business Computer",
+                "th": "ประกาศนียบัตรวิชาชีพชั้นสูง คอมพิวเตอร์ธุรกิจ"
+            },
+            "school": {
+                "en": "Warinchamrap Vocational College",
+                "th": "วิทยาลัยการอาชีพวารินชำราบ"
+            },
             "years": "2021 - 2023"
         }
     ]

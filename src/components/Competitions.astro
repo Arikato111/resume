@@ -1,12 +1,18 @@
 ---
+import type { Lang } from "../types/lang";
 import info from "../data/info.json";
+
+interface Props {
+  lang: Lang;
+}
+const { lang } = Astro.props;
 ---
 
 <div class="my-2">
   <h3 class="font-bold text-xl">Competitions</h3>
   <div>
     {
-      info.competitions.map((comp) => (
+      info.competitions[lang].map((comp) => (
         <div class="flex justify-between">
           <div>
             <div class="font-bold">{comp.name}</div>

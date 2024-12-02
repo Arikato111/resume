@@ -1,18 +1,32 @@
 ---
 import info from "../data/info.json";
+import type { Lang } from "../types/lang";
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+
+const msg = {
+  skills: {
+    en: "Skills",
+    th: "ทักษะ",
+  },
+};
 ---
 
 <div class="my-2">
-  <h3 class="font-bold text-xl">Skills</h3>
+  <h3 class="font-bold text-xl">{msg.skills[lang]}</h3>
   <div>
     {
-      Object.keys(info.skills).map((k) => (
+      Object.keys(info.skills[lang]).map((k) => (
         <div>
           <span class="font-bold">{k}</span>:
           <span>
             {
               //@ts-ignore;
-              info.skills[k]
+              info.skills[lang][k]
             }
           </span>
         </div>

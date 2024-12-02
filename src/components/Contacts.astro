@@ -1,10 +1,31 @@
 ---
 import info from "../data/info.json";
+import type { Lang } from "../types/lang";
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+
+const msg = {
+  email: {
+    en: "email",
+    th: "อีเมล",
+  },
+  website: {
+    en: "Website",
+    th: "เว็บไซต์",
+  },
+  phone: {
+    en: "phone",
+    th: "เบอร์โทร",
+  },
+};
 ---
 
 <div class="text-right">
   <div>
-    <span>Email:</span>
+    <span>{msg.email[lang]}:</span>
     <a class="underline" href={`mailto:${info.personal.email}`}
       >{info.personal.email}</a
     >
@@ -28,7 +49,7 @@ import info from "../data/info.json";
     </span>
   </div>
   <div>
-    <span>Website:</span>
+    <span>{msg.website[lang]}:</span>
     <span>
       <a href={`https://${info.personal.website}`} class="underline"
         >{info.personal.website}</a
@@ -36,7 +57,7 @@ import info from "../data/info.json";
     </span>
   </div>
   <div class="hidden" id="phone-block">
-    <span>Phone:</span>
+    <span>{msg.phone[lang]}:</span>
     <span id="phone-value"></span>
   </div>
 </div>

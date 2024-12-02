@@ -1,15 +1,48 @@
 ---
 import info from "../data/info.json";
+import type { Lang } from "../types/lang";
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+
+const message = {
+  press_btn: {
+    en: "You can print this by press or click print button on your right.",
+    th: "คุณสามารถพิมพ์เอกสารโดยคลิกที่ปุ่มพิมพ์ที่อยู่ด้านขวา",
+  },
+  print: {
+    en: "print",
+    th: "พิมพ์",
+  },
+  view_source: {
+    en: "view source code",
+    th: "ดูซอร์สโค้ด",
+  },
+  navigate_lang: {
+    en: "ไปที่ภาษาไทย",
+    th: "go to english",
+  },
+};
 ---
 
 <header class="print:hidden bg-orange-200 py-10 px-7">
   <div class="flex justify-between">
     <div>
-      <div>You can print this by press or click print button on your right.</div>
+      <div>
+        {message.press_btn[lang]}
+      </div>
       <div>
         <a
-          class="underline hover:text-blue-600"
-          href={`https://${info.common.source}`}>view source code</a
+          class="underline hover:text-blue-600 mx-1"
+          href={`https://${info.common.source}`}>{message.view_source[lang]}</a
+        >
+        <a
+          class="underline hover:text-blue-600 mx-1"
+          href={`/${lang === "en" ? "th" : ""}`}
+          >{message.navigate_lang[lang]}</a
         >
       </div>
     </div>
@@ -17,7 +50,7 @@ import info from "../data/info.json";
       <button
         onclick="print()"
         class="bg-green-300 hover:bg-green-400 py-1 px-3 rounded border-2 shadow"
-        >Print</button
+        >{message.print[lang]}</button
       >
     </div>
   </div>

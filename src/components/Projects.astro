@@ -1,9 +1,22 @@
 ---
 import info from "../data/info.json";
+import type { Lang } from "../types/lang";
+
+interface Props {
+  lang: Lang;
+}
+const { lang } = Astro.props;
+
+const msg = {
+  project: {
+    en: "Projects",
+    th: "โปรเจกต์",
+  },
+};
 ---
 
 <div class="my-2">
-  <h3 class="font-bold text-xl">Projects</h3>
+  <h3 class="font-bold text-xl">{msg.project[lang]}</h3>
   <div>
     {
       info.projects.map((proj) => (
@@ -20,7 +33,7 @@ import info from "../data/info.json";
               </a>
             </span>
           </div>
-          <div class="mx-10"> - {proj.description}</div>
+          <div class="mx-10"> - {proj.description[lang]}</div>
           <div class="mx-10"> - {proj.tech}</div>
         </div>
       ))

@@ -1,5 +1,12 @@
 ---
 import info from "../data/info.json";
+import type { Lang } from "../types/lang";
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
 ---
 
 <div class="my-2">
@@ -9,10 +16,10 @@ import info from "../data/info.json";
       info.Education.map((edu) => (
         <div>
           <div class="flex justify-between">
-            <div class="font-bold">{edu.level},</div>
+            <div class="font-bold">{edu.level[lang]}</div>
             <div>{edu.years}</div>
           </div>
-          <div class="mx-10"> {edu.school}</div>
+          <div class="mx-10"> {edu.school[lang]}</div>
         </div>
       ))
     }
