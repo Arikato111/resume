@@ -102,17 +102,6 @@
     "Education": [
         {
             "level": {
-                "en": "B.Sc. Information and Communication Technology",
-                "th": "วท.บ. เทคโนโลยีสารสนเทศและการสื่อสาร"
-            },
-            "school": {
-                "en": "Ubon Ratchathani University",
-                "th": "มหาวิทยาลัยอุบลราชธานี"
-            },
-            "years": "2023 - present"
-        },
-        {
-            "level": {
                 "en": "Higher Vocational Certificate, Business Computer",
                 "th": "ประกาศนียบัตรวิชาชีพชั้นสูง คอมพิวเตอร์ธุรกิจ"
             },
@@ -120,7 +109,20 @@
                 "en": "Warinchamrap Vocational College",
                 "th": "วิทยาลัยการอาชีพวารินชำราบ"
             },
+            "gpa": "3.24",
             "years": "2021 - 2023"
+        },
+        {
+            "level": {
+                "en": "Vocational Certificate, Business Computer",
+                "th": "ประกาศนียบัตรวิชาชีพ คอมพิวเตอร์ธุรกิจ"
+            },
+            "school": {
+                "en": "Warinchamrap Vocational College",
+                "th": "วิทยาลัยการอาชีพวารินชำราบ"
+            },
+            "gpa": "3.26",
+            "years": "2017 - 2021"
         }
     ]
 }

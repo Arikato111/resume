@@ -7,6 +7,13 @@ interface Props {
 }
 
 const { lang } = Astro.props;
+
+const msg = {
+  gpa: {
+    en: "gpa",
+    th: "เกรดเฉลี่ย",
+  },
+};
 ---
 
 <div class="my-2">
@@ -16,7 +23,10 @@ const { lang } = Astro.props;
       info.Education.map((edu) => (
         <div>
           <div class="flex justify-between">
-            <div class="font-bold">{edu.level[lang]}</div>
+            <div class="font-bold">
+              {edu.level[lang]}{" "}
+              {!!edu.gpa ? `(${msg.gpa[lang]} ${edu.gpa})` : ""}
+            </div>
             <div>{edu.years}</div>
           </div>
           <div class="mx-10"> {edu.school[lang]}</div>
