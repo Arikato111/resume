@@ -15,14 +15,12 @@ const lang: Lang = "en";
 <Layout title={info.common.title[lang]}>
   <Header lang={lang} />
   <main>
-    <div class="flex justify-between">
-      <div class="flex items-center">
-        <h1 class="text-4xl mb-3 font-bold">
-          {info.personal.name[lang]}
-        </h1>
-      </div>
-      <Contacts lang={lang} />
+    <div>
+      <h1 class="text-4xl mb-3 font-bold text-center">
+        {info.personal.name[lang]}
+      </h1>
     </div>
+    <Contacts lang={lang} />
     <div class="max-w-4xl my-3">
       {info.personal.description[lang]}
     </div>

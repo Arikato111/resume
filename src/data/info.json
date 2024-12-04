@@ -12,8 +12,8 @@
             "th": "ณวสันต์ วิศิษฏ์ศิงขร"
         },
         "description": {
-            "en": "A software developer who is interested in developing web applications, mainly using Typescript. Familiar with React, Nextjs, and Expressjs. Also interested in using Rust and Go for back-end and command line programming with Rust. Also very familiar with using Linux for both Server and Desktop.",
-            "th": "นักพัฒนาซอร์ฟแวร์ผู้มีความสนใจในด้านการพัฒนาเว็บแอปพลิเคชั่น โดยใช้ Typescript เป็นหลัก มีความคุ้นเคยกับ React  Nextjs และ expressjs และยังมีความสนใจในการใช้ Rust และ Go ในการทำ back-end และการเขียนโปรแกรมบรรทัดคำสั่งด้วย Rust นอกจากนั้นยังมีความคุ้นเคยกับการใช้งาน Linux ทั้งส่วน Server และ Desktop เป็นอย่างดี"
+            "en": "A software developer who is interested in developing web applications, mainly using Typescript. Familiar with React, Nextjs, and Expressjs. Also interested in using Rust and Go for back-end and command line programming with Rust. Also very familiar with using Linux for both Server and Desktop. Has knowledge of networks, especially SDN.",
+            "th": "นักพัฒนาซอร์ฟแวร์ผู้มีความสนใจในด้านการพัฒนาเว็บแอปพลิเคชั่น โดยใช้ Typescript เป็นหลัก มีความคุ้นเคยกับ React  Nextjs และ expressjs และยังมีความสนใจในการใช้ Rust และ Go ในการทำ back-end และการเขียนโปรแกรมบรรทัดคำสั่งด้วย Rust นอกจากนั้นยังมีความคุ้นเคยกับการใช้งาน Linux ทั้งส่วน Server และ Desktop เป็นอย่างดี มีความรู้ด้านเน็ตเวิร์กโดยเฉพาะ SDN"
         },
         "github": "Arikato111",
         "email": "contact@nawasan.dev",
@@ -38,8 +38,8 @@
         {
             "name": "Tenjin",
             "description": {
-                "en": "Software defined network and Openflow protocol that can control and command the operation of supported network devices. It has a built-in basic controller that can be called via the command line.",
-                "th": "เฟรมเวิร์ก Software defined network และโปรโตคอล Openflow ที่สามารถควบคุมสั่งการการทำงานของอุปกรณ์เน็ตเวิร์กที่รองรับ มีคอนโทรลเลอร์พื้นฐานในตัวที่สามารถเรียกใช้ผ่าน command line"
+                "en": "SDN and Openflow protocol that can control and command the operation of supported network devices. It has a built-in basic controller that can be called via the command line.",
+                "th": "เฟรมเวิร์ก SDN และโปรโตคอล Openflow ที่สามารถควบคุมสั่งการการทำงานของอุปกรณ์เน็ตเวิร์กที่รองรับ มีคอนโทรลเลอร์พื้นฐานในตัวที่สามารถเรียกใช้ผ่าน command line"
             },
             "tech": "Rust, Networks, command line, CI/CD, crates.io",
             "link": "github.com/Arikato111/Tenjin"
