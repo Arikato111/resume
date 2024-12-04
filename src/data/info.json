@@ -38,8 +38,8 @@
         {
             "name": "Tenjin",
             "description": {
-                "en": "The software defined network framework and Openflow protocol",
-                "th": "เฟรมเวิร์ก Software defined network และโปรโตคอล Openflow"
+                "en": "Software defined network and Openflow protocol that can control and command the operation of supported network devices. It has a built-in basic controller that can be called via the command line.",
+                "th": "เฟรมเวิร์ก Software defined network และโปรโตคอล Openflow ที่สามารถควบคุมสั่งการการทำงานของอุปกรณ์เน็ตเวิร์กที่รองรับ มีคอนโทรลเลอร์พื้นฐานในตัวที่สามารถเรียกใช้ผ่าน command line"
             },
             "tech": "Rust, Networks, command line, CI/CD, crates.io",
             "link": "github.com/Arikato111/Tenjin"
@@ -47,8 +47,8 @@
         {
             "name": "Tenjin-py",
             "description": {
-                "en": "Improved that Tenjin can be used with Python.",
-                "th": "ปรับปรุงให้ Tenjin สามารถใช้งานใน Python ได้"
+                "en": "A library that allows Python to call the Tenjin Framework both in code and via the command line by typing the command.",
+                "th": "ไลบรารีที่ทำให้ Python สามารถเรียกใช้งาน Tenjin Framework ได้ ทั้งในรูปแบบโค้ดและการใช้งานผ่าน command line โดยการพิมพ์คำสั่ง"
             },
             "tech": "Rust, Python, maturin, Pyo3, PyPi",
             "link": "github.com/Arikato111/Tenjin-py"
