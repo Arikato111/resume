@@ -36,6 +36,15 @@
     },
     "projects": [
         {
+            "name": "Online shop",
+            "description": {
+                "en": "The mini project from web programming class",
+                "th": "โปรเจกต์เล็ก ๆ จากห้องเรียนการเขียนโปรแกรมบนเว็บ"
+            },
+            "tech": "Full-Stack, Javascript, Nextjs, Express, Prisma, Mongodb, jsonwebtoken",
+            "link": "github.com/Arikato111/final-exam"
+        },
+        {
             "name": "Tenjin",
             "description": {
                 "en": "SDN and Openflow protocol that can control and command the operation of supported network devices. It has a built-in basic controller that can be called via the command line.",
@@ -59,17 +68,8 @@
                 "en": "social website that you can post something, similar to a web board.",
                 "th": "เว็บไซต์โซเชียลที่สามารถโพสต์อะไรก็ได้ คล้ายกับเว็บบอร์ด"
             },
-            "tech": "PHP, MySQL, Tailwindcss, Docker",
+            "tech": "Full-Stack, PHP, MySQL, Tailwindcss, Docker",
             "link": "github.com/Arikato111/social-web-php"
-        },
-        {
-            "name": "Online shop",
-            "description": {
-                "en": "The mini project from web programming class",
-                "th": "โปรเจกต์เล็ก ๆ จากห้องเรียนการเขียนโปรแกรมบนเว็บ"
-            },
-            "tech": "Javascript, Nextjs, Express, Prisma, Mongodb, jsonwebtoken",
-            "link": "github.com/nawasan111/final-exam"
         },
         {
             "name": "what to read",
@@ -77,7 +77,7 @@
                 "en": "the website that can recommends random books to read, and show book list.",
                 "th": "เว็บไซต์ที่สามารถแนะนำหนังสือให้อ่านแบบสุ่ม และแสดงรายการหนังสือ"
             },
-            "tech": "Typescript, React, Tailwindcss",
+            "tech": "Front-end, Typescript, React, Tailwindcss",
             "link": "github.com/Arikato111/what-to-read"
         }
     ],
