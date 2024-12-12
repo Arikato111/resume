@@ -22,7 +22,7 @@
     },
     "skills": {
         "en": {
-            "Programming Languages": "Typescript, Rust, Python, PHP, C/C++",
+            "Programming Languages": "Typescript, Rust, Python, PHP, Golang, C/C++",
             "Frameworks": "NextJS, React, Svelte, Astro, Tailwindcss, ExpressJS",
             "Tools": "Linux, Docker, Git, Firebase, Vscode, Vim",
             "Network": "network administration, Software-defined network, Openflow"
