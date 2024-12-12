@@ -28,7 +28,7 @@
             "Network": "network administration, Software-defined network, Openflow"
         },
         "th": {
-            "ภาษาโปรแกรม": "Typescript, Rust, Python, PHP, C/C++",
+            "ภาษาโปรแกรม": "Typescript, Rust, Python, PHP, Golang, C/C++",
             "เฟรมเวิร์ก": "NextJS, React, Svelte, Astro, Tailwindcss, ExpressJS",
             "เครื่องมือ": "Linux, Docker, Git, Firebase, Vscode, Vim",
             "เน็ตเวิร์ก": "Openflow, Software-defined network"
