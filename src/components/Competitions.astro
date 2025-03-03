@@ -6,10 +6,16 @@ interface Props {
   lang: Lang;
 }
 const { lang } = Astro.props;
+const msg = {
+  competitions: {
+    en: "Competitions",
+    th: "การแข่งขัน",
+  },
+};
 ---
 
 <div class="my-2">
-  <h3 class="font-bold text-xl">Competitions</h3>
+  <h3 class="font-bold text-xl">{msg.competitions[lang]}</h3>
   <div>
     {
       info.competitions[lang].map((comp) => (

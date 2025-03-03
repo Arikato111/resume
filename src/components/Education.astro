@@ -9,6 +9,10 @@ interface Props {
 const { lang } = Astro.props;
 
 const msg = {
+  education: {
+    en: "Education",
+    th: "ประวัติการศึกษา",
+  },
   gpa: {
     en: "gpa",
     th: "เกรดเฉลี่ย",
@@ -17,7 +21,7 @@ const msg = {
 ---
 
 <div class="my-2">
-  <h3 class="font-bold text-xl">Education</h3>
+  <h3 class="font-bold text-xl">{msg.education[lang]}</h3>
   <div>
     {
       info.Education.map((edu) => (

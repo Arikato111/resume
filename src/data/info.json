@@ -12,8 +12,8 @@
             "th": "ณวสันต์ วิศิษฏ์ศิงขร"
         },
         "description": {
-            "en": "A software developer who is interested in developing web applications, mainly using Typescript. Familiar with React, Nextjs, and Expressjs. Also interested in using Rust and Go for back-end and command line programming with Rust. Also very familiar with using Linux for both Server and Desktop. Has knowledge of networks, especially SDN.",
-            "th": "นักพัฒนาซอร์ฟแวร์ผู้มีความสนใจในด้านการพัฒนาเว็บแอปพลิเคชั่น โดยใช้ Typescript เป็นหลัก มีความคุ้นเคยกับ React  Nextjs และ expressjs และยังมีความสนใจในการใช้ Rust และ Go ในการทำ back-end และการเขียนโปรแกรมบรรทัดคำสั่งด้วย Rust นอกจากนั้นยังมีความคุ้นเคยกับการใช้งาน Linux ทั้งส่วน Server และ Desktop เป็นอย่างดี มีความรู้ด้านเน็ตเวิร์กโดยเฉพาะ SDN"
+            "en": "Software developer with knowledge in developing web applications, both Backend and Frontend, with frameworks like Next.js, express.js or Nest.js and popular databases like MySQL or MongoDB. Also has knowledge in using Linux for running various services, including using Docker in various forms, and has knowledge of networking for configuring various devices and using Software-defined Network.",
+            "th": "นักพัฒนาซอร์ฟแวร์ผู้มีความรู้ในการพัฒนาเว็บแอปพลิเคชั่น ทั้ง Backend และ Frontend ด้วยเฟรมเวิร์กอย่าง Next.js express.js หรือ Nest.js และฐ้านข้อมูลยอดฮิตอย่าง MySQL หรือ MongoDB ทั้งยังมีความรู้ในการใช้งาน Linux สำหรับการรัน service ที่หลากหลาย รวมถึงการใช้งาน Docker ในรูปแบบต่างๆ ทั้งยังมีความรู้ด้านเน็ตเวิร์กสำหรับการกำหนดค่าอุปกรณ์ต่างๆ การใช้งาน Software-defined Network"
         },
         "github": "Arikato111",
         "email": "contact@nawasan.dev",
@@ -23,23 +23,23 @@
     "skills": {
         "en": {
             "Programming Languages": "Typescript, Rust, Python, PHP, Golang, C/C++",
-            "Frameworks": "NextJS, React, Svelte, Astro, Tailwindcss, ExpressJS",
-            "Tools": "Linux, Docker, Git, Firebase, Vscode, Vim",
+            "Frameworks": "NextJS, React, Svelte, Astro, Nest.js, Tailwindcss, ExpressJS, EJS",
+            "Tools": "Linux, Docker, Git, MySQL, MongoDB, Firebase, Vscode, Vim",
             "Network": "network administration, Software-defined network, Openflow"
         },
         "th": {
             "ภาษาโปรแกรม": "Typescript, Rust, Python, PHP, Golang, C/C++",
-            "เฟรมเวิร์ก": "NextJS, React, Svelte, Astro, Tailwindcss, ExpressJS",
-            "เครื่องมือ": "Linux, Docker, Git, Firebase, Vscode, Vim",
-            "เน็ตเวิร์ก": "Openflow, Software-defined network"
+            "เฟรมเวิร์ก": "NextJS, React, Svelte, Astro, Nest.js, Tailwindcss, ExpressJS, EJS",
+            "เครื่องมือ": "Linux, Docker, Git, MySQL, MongoDB, Firebase, Vscode, Vim",
+            "เน็ตเวิร์ก": "network administration, Software-defined network, Openflow"
         }
     },
     "projects": [
         {
             "name": "Online shop",
             "description": {
-                "en": "The mini project from web programming class",
-                "th": "โปรเจกต์เล็ก ๆ จากห้องเรียนการเขียนโปรแกรมบนเว็บ"
+                "en": "A small shopping web project from a web programming class that has an ordering system, product management and user accounts.",
+                "th": "โปรเจกต์เว็บขายของเล็ก ๆ จากห้องเรียนการเขียนโปรแกรมบนเว็บ ที่มีระบบการสั่งซื้อ จัดการสินค้า และบัญชีผู้ใช้"
             },
             "tech": "Full-Stack, Javascript, Nextjs, Express, Prisma, Mongodb, jsonwebtoken",
             "link": "github.com/Arikato111/final-exam"
@@ -65,8 +65,8 @@
         {
             "name": "Social web",
             "description": {
-                "en": "social website that you can post something, similar to a web board.",
-                "th": "เว็บไซต์โซเชียลที่สามารถโพสต์อะไรก็ได้ คล้ายกับเว็บบอร์ด"
+                "en": "The website Project has a user account system, admin, posts, and threads.",
+                "th": "เว็บไซต์้โปรเจกจบระดับ ปวส มีระบบบัญชีผู้ใช้งาน แอดมิน โพสต์ ตั้งกระทู้"
             },
             "tech": "Full-Stack, PHP, MySQL, Tailwindcss, Docker",
             "link": "github.com/Arikato111/social-web-php"

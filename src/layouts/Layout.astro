@@ -25,4 +25,10 @@ const { title } = Astro.props;
   * {
     font-family: Arial, Helvetica, sans-serif;
   }
+  @media print {
+    @page {
+      margin: 30px;
+      size: A4;
+    }
+  }
 </style>
