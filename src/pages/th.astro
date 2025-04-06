@@ -9,6 +9,7 @@ import Competitions from "../components/Competitions.astro";
 import BlackLine from "../components/BlackLine.astro";
 import Header from "../components/Header.astro";
 import type { Lang } from "../types/lang";
+import Experience from "../components/Experience.astro";
 const lang: Lang = "th";
 ---
 
@@ -30,6 +31,8 @@ const lang: Lang = "th";
     <Projects lang={lang} />
     <BlackLine />
     <Competitions {lang} />
+    <BlackLine />
+    <Experience {lang} />
     <BlackLine />
     <Education {lang} />
   </main>
