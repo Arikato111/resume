@@ -54,15 +54,6 @@
             "link": "github.com/Arikato111/Tenjin"
         },
         {
-            "name": "Tenjin-py",
-            "description": {
-                "en": "A library that allows Python to call the Tenjin Framework both in code and via the command line by typing the command.",
-                "th": "ไลบรารีที่ทำให้ Python สามารถเรียกใช้งาน Tenjin Framework ได้ ทั้งในรูปแบบโค้ดและการใช้งานผ่าน command line โดยการพิมพ์คำสั่ง"
-            },
-            "tech": "Rust, Python, maturin, Pyo3, PyPi",
-            "link": "github.com/Arikato111/Tenjin-py"
-        },
-        {
             "name": "Social web",
             "description": {
                 "en": "The website Project has a user account system, admin, posts, and threads.",
