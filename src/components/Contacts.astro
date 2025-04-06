@@ -23,7 +23,17 @@ const msg = {
 };
 ---
 
-<div class="text-right flex justify-between text-[14px]">
+<div class="text-right flex justify-between text-[16px]">
+  <div>
+    <span>Github:</span>
+    <span>
+      <a
+        class="underline font-bold"
+        href={`https://github.com/${info.personal.github}`}
+        >{info.personal.github}</a
+      >
+    </span>
+  </div>
   <div>
     <span>{msg.email[lang]}:</span>
     <a class="underline" href={`mailto:${info.personal.email}`}
@@ -39,14 +49,6 @@ const msg = {
         >{info.personal.linkedin}</a
       ></span
     >
-  </div>
-  <div>
-    <span>Github:</span>
-    <span>
-      <a class="underline" href={`https://github.com/${info.personal.github}`}
-        >{info.personal.github}</a
-      >
-    </span>
   </div>
   <div>
     <span>{msg.website[lang]}:</span>
@@ -80,3 +82,9 @@ const msg = {
     window.print();
   }
 </script>
+
+<style>
+  a {
+    text-decoration: none;
+  }
+</style>
