@@ -13,24 +13,54 @@ const msg = {
     en: "Skills",
     th: "ทักษะ",
   },
+  programming: {
+    en: "Programming Languages",
+    th: "ภาษาโปรแกรม",
+  },
+  frameworks: {
+    en: "Frameworks",
+    th: "เฟรมเวิร์ก",
+  },
+  tools: {
+    en: "Tools",
+    th: "เครื่องมือ",
+  },
+  networks: {
+    en: "Network",
+    th: "เน็ตเวิร์ก",
+  },
 };
 ---
 
 <div class="my-2">
   <h3 class="font-bold text-xl">{msg.skills[lang]}</h3>
   <div>
-    {
-      Object.keys(info.skills[lang]).map((k) => (
-        <div class="mx-8">
-          <span class="font-bold">{k}</span>:
-          <span>
-            {
-              //@ts-ignore;
-              info.skills[lang][k]
-            }
-          </span>
-        </div>
-      ))
-    }
+    <div class="mx-8">
+      <span class="font-bold">{msg.programming[lang]}</span>:
+      <span>
+        {info.skills["programming"]}
+      </span>
+    </div>
+
+    <div class="mx-8">
+      <span class="font-bold">{msg.frameworks[lang]}</span>:
+      <span>
+        {info.skills["frameworks"]}
+      </span>
+    </div>
+
+    <div class="mx-8">
+      <span class="font-bold">{msg.tools[lang]}</span>:
+      <span>
+        {info.skills["tools"]}
+      </span>
+    </div>
+
+    <div class="mx-8">
+      <span class="font-bold">{msg.networks[lang]}</span>:
+      <span>
+        {info.skills["networks"]}
+      </span>
+    </div>
   </div>
 </div>
