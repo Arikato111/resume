@@ -1,0 +1,29 @@
+---
+import type { Lang } from "../types/lang";
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+
+const msg = {
+  location: {
+    th: "ที่อยู่ปัจจุบัน",
+    en: "Current Address",
+  },
+  address: {
+    th: "รามคำแหง 2 แขวงดอกไม้ เขตประเวศ กรุงเทพมหานคร 10250",
+    en: "Ramkhamhaeng 2, Dokmai Subdistrict, Prawet District, Bangkok 10250",
+  },
+};
+---
+
+<div class="my-2">
+  <h3 class="font-bold">
+    {msg.location[lang]}
+  </h3>
+  <span>
+    {msg.address[lang]}
+  </span>
+</div>
