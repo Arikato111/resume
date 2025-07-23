@@ -11,6 +11,7 @@ import Header from "../components/Header.astro";
 import type { Lang } from "../types/lang";
 import Experience from "../components/Experience.astro";
 import Location from "../components/Location.astro";
+import ResumeLink from "../components/ResumeLink.astro";
 const lang: Lang = "en";
 ---
 
@@ -38,5 +39,7 @@ const lang: Lang = "en";
     <Experience {lang} />
     <BlackLine />
     <Education {lang} />
+    <BlackLine />
+    <ResumeLink {lang} />
   </main>
 </Layout>
