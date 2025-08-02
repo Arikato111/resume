@@ -17,13 +17,17 @@ const msg = {
     th: "เว็บไซต์",
   },
   phone: {
-    en: "phone",
+    en: "Phone",
     th: "เบอร์โทร",
+  },
+  line: {
+    en: "Line ID",
+    th: "ไอดีไลน์",
   },
 };
 ---
 
-<div class="text-right flex justify-between text-[16px]">
+<div class="contact-box text-center flex justify-between text-[16px]">
   <div>
     <span>Github:</span>
     <span>
@@ -52,9 +56,20 @@ const msg = {
     <span>{msg.phone[lang]}:</span>
     <span id="phone-value"></span>
   </div>
+  <div class="hidden" id="line-block">
+    <span>{msg.line[lang]}:</span>
+    <span id="line-value"></span>
+  </div>
 </div>
 
 <script is:inline>
+  function setLine(line) {
+    const line_div = document.getElementById("line-block");
+    const line_value = document.getElementById("line-value");
+
+    line_div.classList.remove("hidden");
+    line_value.innerText = line;
+  }
   function setPhone(phone) {
     const phone_div = document.getElementById("phone-block");
     const phone_value = document.getElementById("phone-value");
@@ -67,6 +82,10 @@ const msg = {
   if (params.phone) {
     console.log(params.phone);
     setPhone(params.phone);
+  }
+  if (params.line) {
+    console.log(params.line);
+    setLine(params.line);
   }
   if (params.print != undefined) {
     window.print();
