@@ -25,6 +25,22 @@ const message = {
     en: "ไปที่ภาษาไทย",
     th: "go to english",
   },
+  line: {
+    en: "Line ID",
+    th: "ไอดีไลน์",
+  },
+  phone: {
+    en: "Phone",
+    th: "เบอร์โทร",
+  },
+  update: {
+    en: "update",
+    th: "อัพเดท",
+  },
+  clear: {
+    en: "clear",
+    th: "ล้าง",
+  },
 };
 ---
 
@@ -54,4 +70,72 @@ const message = {
       >
     </div>
   </div>
+  <div class="mt-3">
+    <div class="my-1">
+      <input
+        type="text"
+        name="phone"
+        id="phone"
+        placeholder={message.phone[lang]}
+      />
+    </div>
+    <div class="my-1">
+      <input
+        type="text"
+        name="line"
+        id="line"
+        placeholder={message.line[lang]}
+      />
+    </div>
+    <div>
+      <button
+        class="border border-white b bg-blue-300 px-3 py-1 rounded"
+        id="update-info">{message.update[lang]}</button
+      >
+      <button
+        id="remove-info"
+        class="border border-white bg-yellow-300 px-3 py-1"
+        >{message.clear[lang]}</button
+      >
+    </div>
+  </div>
 </header>
+
+<script is:inline>
+  function removeParams(key) {
+    const url = new URL(window.location.href);
+    const searchParams = url.searchParams;
+    searchParams.delete(key);
+    url.search = searchParams.toString();
+    history.replaceState(null, "", url.toString());
+  }
+  function updateParams(key, value) {
+    const url = new URL(window.location.href);
+    const searchParams = url.searchParams;
+    searchParams.set(key, value);
+    url.search = searchParams.toString();
+    history.replaceState(null, "", url.toString());
+  }
+
+  // document.getElementById("line").onkeyup = function (e) {
+  //   const value = e.target.value;
+  //   updateParams("line", value);
+  //   window.location.reload();
+  // };
+  // document.getElementById("phone").onkeyup = function (e) {
+  //   const value = e.target.value;
+  //   updateParams("phone", value);
+  // };
+  document.getElementById("update-info").onclick = function () {
+    const line = document.getElementById("line").value;
+    const phone = document.getElementById("phone").value;
+    updateParams("line", line);
+    updateParams("phone", phone);
+    window.location.reload();
+  };
+  document.getElementById("remove-info").onclick = function () {
+    removeParams("line");
+    removeParams("phone");
+    window.location.reload();
+  };
+</script>
