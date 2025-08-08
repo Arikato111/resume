@@ -8,6 +8,15 @@ interface Props {
 const { lang } = Astro.props;
 
 const msg = {
+  primary_contact_line: {
+    th: "กรุณาติดต่อผ่านอีเมลหรือไลน์เป็นหลัก",
+    en: "Please contact me primarily by email or Line.",
+  },
+  primary_contact: {
+    th: "กรุณาติดต่อผ่านอีเมลเป็นหลัก",
+    en: "Please contact me primarily by email.",
+  },
+
   resume: {
     th: "เรซูเม่ออนไลน์",
     en: "Online resume",
@@ -17,7 +26,26 @@ const msg = {
 const resumeLink = "https://resume.nawasan.dev";
 ---
 
-<div class="text-right">
-  {msg.resume[lang]}:
-  <a class="underline" href={resumeLink}>{resumeLink}</a>
+<div class="flex justify-between">
+  <span class="hidden" id="contact-message-line"
+    >{msg.primary_contact_line[lang]}</span
+  >
+  <span class="hidden" id="contact-message">{msg.primary_contact[lang]}</span>
+  <span>
+    {msg.resume[lang]}:
+    <a class="underline" href={resumeLink}>{resumeLink}</a>
+  </span>
 </div>
+
+<script is:inline>
+  const contact_message = document.getElementById("contact-message");
+  const contact_message_line = document.getElementById("contact-message-line");
+
+  const urlSearchParams2 = new URLSearchParams(window.location.search);
+  const params2 = Object.fromEntries(urlSearchParams2.entries());
+  if (params2.line) {
+    contact_message_line.classList.remove("hidden");
+  } else {
+    contact_message.classList.remove("hidden");
+  }
+</script>
