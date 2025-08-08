@@ -129,8 +129,8 @@ const message = {
   document.getElementById("update-info").onclick = function () {
     const line = document.getElementById("line").value;
     const phone = document.getElementById("phone").value;
-    updateParams("line", line);
-    updateParams("phone", phone);
+    if (line) updateParams("line", line);
+    if (phone) updateParams("phone", phone);
     window.location.reload();
   };
   document.getElementById("remove-info").onclick = function () {
