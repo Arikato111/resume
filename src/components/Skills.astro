@@ -29,6 +29,10 @@ const msg = {
     en: "Network",
     th: "เน็ตเวิร์ก",
   },
+  cybersecurity: {
+    en: "Cybersecurity",
+    th: "ความปลอดภัยทางไซเบอร์",
+  },
 };
 ---
 
@@ -60,6 +64,13 @@ const msg = {
       <span class="font-bold">{msg.networks[lang]}</span>:
       <span>
         {info.skills["networks"]}
+      </span>
+    </div>
+
+    <div class="mx-8">
+      <span class="font-bold">{msg.cybersecurity[lang]}</span>:
+      <span>
+        {info.skills["cybersecurity"]}
       </span>
     </div>
   </div>

@@ -12,8 +12,8 @@
             "th": "ณวสันต์ วิศิษฏ์ศิงขร"
         },
         "description": {
-            "en": "Software developer with knowledge in developing web applications, both Backend and Frontend, with frameworks like Next.js, express.js or Nest.js and popular databases like MySQL or MongoDB. Also has knowledge in using Linux for running various services, including using Docker in various forms, and has knowledge of networking for configuring various devices and using Software-defined Network.",
-            "th": "นักพัฒนาซอร์ฟแวร์ผู้มีความรู้ในการพัฒนาเว็บแอปพลิเคชั่น ทั้ง Backend และ Frontend ด้วยเฟรมเวิร์กอย่าง Next.js express.js หรือ Nest.js และฐ้านข้อมูลยอดฮิตอย่าง MySQL หรือ MongoDB ทั้งยังมีความรู้ในการใช้งาน Linux สำหรับการรัน service ที่หลากหลาย รวมถึงการใช้งาน Docker ในรูปแบบต่างๆ ทั้งยังมีความรู้ด้านเน็ตเวิร์กสำหรับการกำหนดค่าอุปกรณ์ต่างๆ การใช้งาน Software-defined Network"
+            "en": "Software developer with knowledge in developing web applications, both Backend and Frontend, with popular frameworks and popular databases. Also has knowledge in using Linux for running various services, including using Docker in various forms, and has knowledge of networking for configuring various devices and using Software-defined Network and finally has knowledge in cybersecurity.",
+            "th": "นักพัฒนาซอร์ฟแวร์ผู้มีความรู้ในการพัฒนาเว็บแอปพลิเคชั่น ทั้ง Backend และ Frontend ด้วยเฟรมเวิร์กและฐ้านข้อมูลยอดฮิต มีความรู้ในการใช้งาน Linux สำหรับการรัน service ต่าง ๆ รวมถึงการใช้งาน Docker ในรูปแบบต่างๆ ทั้งยังมีความรู้ด้านเน็ตเวิร์กสำหรับการกำหนดค่าอุปกรณ์ต่างๆ รวมถึงการใช้งาน Software-defined Network และสุดท้ายมีความรู้ด้านความปลอดภัยทางไซเบอร์"
         },
         "github": "Arikato111",
         "email": "contact@nawasan.dev",
@@ -24,7 +24,8 @@
         "programming": "Typescript, Rust, Python, PHP, Golang, C/C++",
         "frameworks": "NextJS, React, Svelte, Astro, Nest.js, Tailwindcss, ExpressJS, EJS",
         "tools": "Linux, Docker, Git, Github Action, vim, MySQL, MongoDB, Firebase, Vscode",
-        "networks": "network administration, Software-defined network, Openflow"
+        "networks": "network administration, Software-defined network, Openflow",
+        "cybersecurity": "Kalilinux, nmap, rustscan, metasploit, Wireshark, nikto, SQLi, etc."
     },
     "projects": [
         {
@@ -53,15 +54,6 @@
             },
             "tech": "Full-Stack, PHP, MySQL, Tailwindcss, Docker",
             "link": "github.com/Arikato111/social-web-php"
-        },
-        {
-            "name": "what to read",
-            "description": {
-                "en": "the website that can recommends random books to read, and show book list.",
-                "th": "เว็บไซต์ที่สามารถแนะนำหนังสือให้อ่านแบบสุ่ม และแสดงรายการหนังสือ"
-            },
-            "tech": "Front-end, Typescript, React, Tailwindcss",
-            "link": "github.com/Arikato111/what-to-read"
         }
     ],
     "competitions": {
