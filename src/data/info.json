@@ -24,8 +24,7 @@
         "programming": "Typescript, Rust, Python, PHP, Golang, C/C++",
         "frameworks": "NextJS, React, Svelte, Astro, Nest.js, Tailwindcss, ExpressJS, EJS",
         "tools": "Linux, Docker, Git, Github Action, vim, MySQL, MongoDB, Firebase, Vscode",
-        "networks": "network administration, Software-defined network, Openflow",
-        "cybersecurity": "Kalilinux, nmap, rustscan, metasploit, Wireshark, nikto, SQLi, etc."
+        "networks": "network administration, Software-defined network, Openflow"
     },
     "projects": [
         {
