@@ -20,11 +20,9 @@ const msg = {
 };
 ---
 
-<div class="my-2">
-  <h3 class="font-bold">
-    {msg.location[lang]}
-  </h3>
-  <span>
-    {info.personal.location[lang]}
-  </span>
+<div class="section-block my-3 text-sm print:text-xs">
+  <div class="flex items-center gap-2 text-slate-700">
+    <span class="font-semibold text-slate-800">{msg.location[lang]}:</span>
+    <span class="text-slate-600">{info.personal.location[lang]}</span>
+  </div>
 </div>

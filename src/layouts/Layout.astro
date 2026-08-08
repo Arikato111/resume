@@ -22,13 +22,71 @@ const { title } = Astro.props;
 </html>
 
 <style is:global>
-  * {
-    font-family: Arial, Helvetica, sans-serif;
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Prompt:wght@300;400;500;600;700&display=swap');
+
+  :root {
+    --font-sans: 'Inter', 'Prompt', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   }
+
+  body {
+    font-family: var(--font-sans);
+    color: #1e293b;
+    background-color: #f8fafc;
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Screen presentation container styling */
+  @media screen {
+    .resume-wrapper {
+      max-width: 900px;
+      margin: 2rem auto;
+      background: #ffffff;
+      padding: 3rem 3.5rem;
+      border-radius: 12px;
+      box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.01);
+      border: 1px solid #e2e8f0;
+    }
+  }
+
+  /* Print PDF styling */
   @media print {
     @page {
-      margin: 30px;
+      margin: 12mm 15mm;
       size: A4;
+    }
+
+    body {
+      background-color: #ffffff !important;
+      color: #0f172a !important;
+      font-size: 10.5pt;
+      line-height: 1.45;
+    }
+
+    .resume-wrapper {
+      max-width: 100% !important;
+      margin: 0 !important;
+      padding: 0 !important;
+      box-shadow: none !important;
+      border: none !important;
+      background: transparent !important;
+    }
+
+    .print\:hidden {
+      display: none !important;
+    }
+
+    /* Page break optimization */
+    .section-block {
+      break-inside: avoid;
+      page-break-inside: avoid;
+    }
+
+    a {
+      text-decoration: none !important;
+      color: inherit !important;
     }
   }
 </style>

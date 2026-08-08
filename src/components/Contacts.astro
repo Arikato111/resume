@@ -27,38 +27,42 @@ const msg = {
 };
 ---
 
-<div class="contact-box text-center flex justify-between text-[16px]">
-  <div>
-    <span>Github:</span>
-    <span>
-      <a
-        class="underline font-bold"
-        href={`https://github.com/${info.personal.github}`}
-        >{info.personal.github}</a
-      >
-    </span>
+<div class="contact-box flex flex-wrap justify-center sm:justify-between items-center gap-y-2 gap-x-4 text-xs sm:text-sm text-slate-600 print:text-xs print:gap-x-3 my-3">
+  <div class="flex items-center gap-1.5">
+    <span class="font-medium text-slate-500">GitHub:</span>
+    <a
+      class="text-blue-600 hover:text-blue-800 font-semibold underline underline-offset-2 transition-colors print:no-underline print:text-slate-900"
+      href={`https://github.com/${info.personal.github}`}
+      target="_blank"
+      rel="noopener noreferrer"
+      >{info.personal.github}</a
+    >
   </div>
-  <div>
-    <span>{msg.email[lang]}:</span>
-    <a class="underline" href={`mailto:${info.personal.email}`}
+  <div class="flex items-center gap-1.5">
+    <span class="font-medium text-slate-500">{msg.email[lang]}:</span>
+    <a 
+      class="text-blue-600 hover:text-blue-800 underline underline-offset-2 transition-colors print:no-underline print:text-slate-900" 
+      href={`mailto:${info.personal.email}`}
       >{info.personal.email}</a
     >
   </div>
-  <div>
-    <span>{msg.website[lang]}:</span>
-    <span>
-      <a href={`https://${info.personal.website}`} class="underline"
-        >{info.personal.website}</a
-      >
-    </span>
+  <div class="flex items-center gap-1.5">
+    <span class="font-medium text-slate-500">{msg.website[lang]}:</span>
+    <a 
+      href={`https://${info.personal.website}`} 
+      target="_blank"
+      rel="noopener noreferrer"
+      class="text-blue-600 hover:text-blue-800 underline underline-offset-2 transition-colors print:no-underline print:text-slate-900"
+      >{info.personal.website}</a
+    >
   </div>
-  <div class="hidden" id="phone-block">
-    <span>{msg.phone[lang]}:</span>
-    <span id="phone-value"></span>
+  <div class="hidden flex items-center gap-1.5" id="phone-block">
+    <span class="font-medium text-slate-500">{msg.phone[lang]}:</span>
+    <span id="phone-value" class="font-medium text-slate-800"></span>
   </div>
-  <div class="hidden" id="line-block">
-    <span>{msg.line[lang]}:</span>
-    <span id="line-value"></span>
+  <div class="hidden flex items-center gap-1.5" id="line-block">
+    <span class="font-medium text-slate-500">{msg.line[lang]}:</span>
+    <span id="line-value" class="font-medium text-slate-800"></span>
   </div>
 </div>
 

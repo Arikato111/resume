@@ -9,7 +9,6 @@ import Competitions from "../components/Competitions.astro";
 import BlackLine from "../components/BlackLine.astro";
 import Header from "../components/Header.astro";
 import type { Lang } from "../types/lang";
-import Experience from "../components/Experience.astro";
 import Location from "../components/Location.astro";
 import ResumeLink from "../components/ResumeLink.astro";
 const lang: Lang = "th";
@@ -17,29 +16,29 @@ const lang: Lang = "th";
 
 <Layout title={info.common.title[lang]}>
   <Header lang={lang} />
-  <main>
-    <div>
-      <h1 class="text-4xl mb-3 font-bold text-center py-1">
-        {info.personal.name[lang]}
-      </h1>
-    </div>
-    <Contacts lang={lang} />
-    <div class="max-w-4xl my-3">
-      {info.personal.description[lang]}
-    </div>
-    <BlackLine />
-    <Location lang={lang} />
-    <BlackLine />
-    <Skills lang={lang} />
-    <BlackLine />
-    <Projects lang={lang} />
-    <BlackLine />
-    <Competitions {lang} />
-    <BlackLine />
-    <Experience {lang} />
-    <BlackLine />
-    <Education {lang} />
-    <BlackLine />
-    <ResumeLink {lang} />
-  </main>
+  <div class="resume-wrapper">
+    <main>
+      <header class="text-center mb-6">
+        <h1 class="text-3xl sm:text-4xl font-bold tracking-tight text-slate-900 print:text-2xl print:mb-1 mb-2">
+          {info.personal.name[lang]}
+        </h1>
+        <Contacts lang={lang} />
+        <div class="max-w-3xl mx-auto my-4 text-sm sm:text-base text-slate-600 print:text-xs print:my-2 print:text-slate-700 leading-relaxed text-center sm:text-justify">
+          {info.personal.description[lang]}
+        </div>
+      </header>
+
+      <Location lang={lang} />
+      <BlackLine />
+      <Skills lang={lang} />
+      <BlackLine />
+      <Projects lang={lang} />
+      <BlackLine />
+      <Competitions {lang} />
+      <BlackLine />
+      <Education {lang} />
+      <BlackLine />
+      <ResumeLink {lang} />
+    </main>
+  </div>
 </Layout>

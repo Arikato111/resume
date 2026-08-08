@@ -36,35 +36,30 @@ const msg = {
 };
 ---
 
-<div class="my-2">
-  <h3 class="font-bold text-xl">{msg.skills[lang]}</h3>
-  <div>
-    <div class="mx-8">
-      <span class="font-bold">{msg.programming[lang]}</span>:
-      <span>
-        {info.skills["programming"]}
-      </span>
+<div class="section-block my-4 print:my-3">
+  <h2 class="font-bold text-lg text-slate-800 border-b border-slate-200 pb-1.5 mb-3 tracking-wide uppercase text-xs sm:text-sm print:text-xs print:mb-2 print:pb-1">
+    {msg.skills[lang]}
+  </h2>
+  
+  <div class="space-y-2 print:space-y-1.5 text-sm print:text-xs">
+    <div class="flex flex-col sm:flex-row sm:items-baseline gap-1 sm:gap-2">
+      <span class="font-semibold text-slate-700 w-44 shrink-0">{msg.programming[lang]}:</span>
+      <span class="text-slate-600 leading-relaxed">{info.skills["programming"]}</span>
     </div>
 
-    <div class="mx-8">
-      <span class="font-bold">{msg.frameworks[lang]}</span>:
-      <span>
-        {info.skills["frameworks"]}
-      </span>
+    <div class="flex flex-col sm:flex-row sm:items-baseline gap-1 sm:gap-2">
+      <span class="font-semibold text-slate-700 w-44 shrink-0">{msg.frameworks[lang]}:</span>
+      <span class="text-slate-600 leading-relaxed">{info.skills["frameworks"]}</span>
     </div>
 
-    <div class="mx-8">
-      <span class="font-bold">{msg.tools[lang]}</span>:
-      <span>
-        {info.skills["tools"]}
-      </span>
+    <div class="flex flex-col sm:flex-row sm:items-baseline gap-1 sm:gap-2">
+      <span class="font-semibold text-slate-700 w-44 shrink-0">{msg.tools[lang]}:</span>
+      <span class="text-slate-600 leading-relaxed">{info.skills["tools"]}</span>
     </div>
 
-    <div class="mx-8">
-      <span class="font-bold">{msg.networks[lang]}</span>:
-      <span>
-        {info.skills["networks"]}
-      </span>
+    <div class="flex flex-col sm:flex-row sm:items-baseline gap-1 sm:gap-2">
+      <span class="font-semibold text-slate-700 w-44 shrink-0">{msg.networks[lang]}:</span>
+      <span class="text-slate-600 leading-relaxed">{info.skills["networks"]}</span>
     </div>
   </div>
 </div>
